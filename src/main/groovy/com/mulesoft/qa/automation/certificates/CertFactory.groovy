@@ -16,14 +16,14 @@ import java.security.cert.X509Certificate
  */
 class CertFactory {
 
-    static X509V3CertificateGenerator v3CertGen = new X509V3CertificateGenerator();
-
-    public
-    static Certificate generateSignedCertificate(
+    public static Certificate generateSignedCertificate(
             PublicKey pubKey,
             PrivateKey signingPrivateKey,
             PublicKey signingPublicKey,
             String CN) throws Exception {
+
+        static X509V3CertificateGenerator v3CertGen = new X509V3CertificateGenerator();
+
         //
         // signers name table.
         //
