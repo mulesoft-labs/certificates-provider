@@ -22,7 +22,7 @@ class CertFactory {
             PublicKey signingPublicKey,
             String CN) throws Exception {
 
-        static X509V3CertificateGenerator v3CertGen = new X509V3CertificateGenerator();
+        X509V3CertificateGenerator v3CertGen = new X509V3CertificateGenerator();
 
         //
         // signers name table.

@@ -15,7 +15,7 @@ class CAFactory {
 
     public static Certificate createMasterCert(PublicKey pubKey, PrivateKey privKey) throws Exception {
 
-        static X509V1CertificateGenerator v1CertGen = new X509V1CertificateGenerator();
+        X509V1CertificateGenerator v1CertGen = new X509V1CertificateGenerator();
 
         String issuer = "C=AU, O=ARM Automation, OU=ARM Automation";
         String subject = "C=AU, O=ARM Automation, OU=ARM Automation";
