@@ -31,7 +31,7 @@ class KeyUtils {
         generateCertificateBundle([ targetDomain ], signedCertsAmount)
     }
 
-    public static CertificatesBundle generateCertificateBundle(String[] targetDomain = ['juanito.com'], int signedCertsAmount = 1){
+    public static CertificatesBundle generateCertificateBundle(List<String> targetDomain = ['defaulting.com'], int signedCertsAmount = 1){
 
         KeyPair caKeyPair = generateKeyPair()
         KeyPair intKeyPair = generateKeyPair()
